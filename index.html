@@ -16,7 +16,7 @@
             margin: 0;
         }
         </style>
-        <title></title>
+        <title>Mapa de Produtividade</title>
     </head>
     <body>
         <div id="map">
@@ -37,7 +37,7 @@
             zoomControl:true, maxZoom:13, minZoom:1
         }).fitBounds([[-27.702679467141188,-55.77437320677117],[-20.958248896460404,-43.363230352477146]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        map.attributionControl.setPrefix('<a href="https://github.com/renatamarconato" target="_blank">qgis2web</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
         var bounds_group = new L.featureGroup([]);
